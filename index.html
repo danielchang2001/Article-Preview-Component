@@ -58,6 +58,7 @@
       border-radius: 300px;
       width: 40px;
       height: 40px;
+      margin-top: 4px;
     }
     .profileInfo {
       display: block;
@@ -69,7 +70,8 @@
     }
     .shareIcon {
       margin-top: 6px;
-      margin-left: 210px;
+      margin-left: 400px;
+      position: fixed;
     }
     .shareIcon .two {
       width: 16px;
@@ -83,6 +85,15 @@
       height: 30px;
       border-radius: 100px;
       position: fixed;
+    }
+    #shareInfo {
+      position: relative;
+      width: 220px;
+      left: -95px;
+      top: -70px;
+    }
+    #shareInfo img {
+      width: 100%;
     }
 
   </style>
@@ -105,17 +116,22 @@
           <p>28 Jun 2020</p>
         </div>
         <div class="shareIcon">
+          <a href="javascript:showhide('shareInfo')">
           <div class="iconBg"></div>
           <img class="two" src="images/icon-share.svg" alt="">
+          <div id="shareInfo" style="display: none;">
+            <img src="images/bubble.png" alt="">
+          </div>
+          </a>
         </div>
-        
       </div>
       <!-- Share -->
     </div>
   </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" >Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://danielchangcreations.me/">Daniel Chang</a>.
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
